@@ -4,11 +4,14 @@
   "description": "",
   "main": "bin/index.js",
   "scripts": {
+    "watch": "node_modules/.bin/nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "sr.teppi",
   "license": "ISC",
   "devDependencies": {
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.6.2",
     "typescript": "^3.8.2"
   },
   "dependencies": {
