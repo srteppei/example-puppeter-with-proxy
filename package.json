@@ -1,0 +1,17 @@
+{
+  "name": "proxy-lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sr.teppi",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.8.2"
+  },
+  "dependencies": {
+    "@types/node": "^13.7.4"
+  }
+}

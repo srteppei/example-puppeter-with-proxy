@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {                
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": true,
+    "sourceMap": true,
+    "strict": true,                           
+    "esModuleInterop": true,                  
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "bin",
+    "declarationDir": "types",
+    "lib": [
+      "ES2019",
+    ],
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "bin",
+    "types"
+  ]
+}
