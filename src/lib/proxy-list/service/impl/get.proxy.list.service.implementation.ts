@@ -7,7 +7,7 @@ export class GetProxyListServiceImplementation implements GetProxyListService {
   getProxyList(): Promise<Proxy[]> {
     return new Promise((resolve, reject) => {
       let proxyList: Proxy[] = []
-      getProxiesFromSource('freeproxylist', PROXY_REQUEST_CONFIGURATION)
+      getProxiesFromSource('hidemyname', PROXY_REQUEST_CONFIGURATION)
         .on('data', function(proxies) {
           proxyList = proxyList.concat(proxies)
         })

@@ -1,6 +1,6 @@
 import { Options } from 'proxy-lists'
 
 export const PROXY_REQUEST_CONFIGURATION: Options = {
-  countries: ['es', 'de'],
+  countries: ['de'],
   protocols: ['https'],
 }
