@@ -1,12 +1,6 @@
 {
-    "ext": "ts",
-    "watch": [
-        "src/*.ts"
-    ],
-    "ignore": [
-        "node_modules",
-        "bin",
-        "types"
-    ],
-    "exec": "ts-node ./src/index.ts"
+  "ext": "ts",
+  "watch": ["src/**/*.ts"],
+  "ignore": ["node_modules", "bin", "types"],
+  "exec": "ts-node ./src/index.ts"
 }

@@ -11,6 +11,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^13.7.4",
+    "@types/proxy-lists": "^1.14.0",
     "husky": "^4.2.3",
     "nodemon": "^2.0.2",
     "prettier": "^1.19.1",
@@ -18,7 +19,10 @@
     "ts-node": "^8.6.2",
     "typescript": "^3.8.2"
   },
-  "dependencies": {},
+  "dependencies": {
+    "proxy-lists": "^1.20.1",
+    "puppeteer": "^2.1.1"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged"
