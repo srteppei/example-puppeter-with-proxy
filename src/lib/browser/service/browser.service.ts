@@ -1,4 +1,4 @@
-import { Proxy } from 'proxy-lists'
+import { Proxy } from '../../proxy-list'
 import { Browser } from 'puppeteer'
 
 export interface BrowserService {

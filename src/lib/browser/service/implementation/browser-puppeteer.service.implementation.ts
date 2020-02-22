@@ -1,6 +1,6 @@
-import { Proxy } from 'proxy-lists'
 import { launch, Browser, LaunchOptions } from 'puppeteer'
 import { BrowserService } from '..'
+import { Proxy } from '../../../proxy-list'
 
 export class BrowserPuppeteerServiceImplementation implements BrowserService {
   async launch(proxy?: Proxy): Promise<Browser> {
@@ -11,8 +11,8 @@ export class BrowserPuppeteerServiceImplementation implements BrowserService {
       }
 
       if (proxy !== undefined && proxy !== null) {
-        if (proxy.protocols !== undefined) {
-          const domain = `${proxy.protocols[0]}://${proxy.ipAddress}:${proxy.port}`
+        if (proxy.protocolList !== undefined) {
+          const domain = `${proxy.protocolList[0]}://${proxy.ip}:${proxy.port}`
           console.log(domain)
           launchOptions.args!.push(`--proxy-server=${domain}`)
         }
