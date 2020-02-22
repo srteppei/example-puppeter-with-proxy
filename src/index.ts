@@ -8,9 +8,9 @@ async function execute() {
   const proxyList = await core.proxy.service.getProxyList.getProxyList()
   const proxy = util.getRandomElementFromArray(proxyList)
   console.log(proxy)
-  const browser = await core.browser.service.puppeteer.launch(proxy)
+  /* const browser = await core.browser.service.puppeteer.launch(proxy)
   const page = (await browser.pages())[0]
-  page.goto('https://milonic.com/myipaddress.php')
+  page.goto('https://milonic.com/myipaddress.php') */
 }
 
 execute()

@@ -1,6 +1,3 @@
-import { Options } from 'proxy-lists'
+import { ProxyConfiguration } from '../domain'
 
-export const PROXY_REQUEST_CONFIGURATION: Options = {
-  countries: ['fr'],
-  protocols: ['http'],
-}
+export const PROXY_REQUEST_CONFIGURATION = new ProxyConfiguration(['fr'], ['http'])

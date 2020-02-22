@@ -7,7 +7,10 @@ export class ProxyListServiceAssembly {
 
   get getProxyList() {
     if (this._getProxyListService === undefined) {
-      this._getProxyListService = new GetProxyListServiceImplementation(this.proxyListMapperAssembly.thirdPartyProxyToProxy)
+      this._getProxyListService = new GetProxyListServiceImplementation(
+        this.proxyListMapperAssembly.thirdPartyProxyToProxy,
+        this.proxyListMapperAssembly.proxyConfigurationToOptionsThirdParty
+      )
     }
     return this._getProxyListService
   }
