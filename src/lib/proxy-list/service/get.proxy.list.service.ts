@@ -1,4 +1,4 @@
-import { Proxy } from 'proxy-lists'
+import { Proxy } from '..'
 
 export interface GetProxyListService {
   getProxyList(): Promise<Proxy[]>
